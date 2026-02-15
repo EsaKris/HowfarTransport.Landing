@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { MapPin, Phone, Mail, ArrowRight } from "lucide-react";
+import Image from "next/image";
 
 const links = {
   Riders: [
@@ -59,9 +60,17 @@ export default function Footer() {
           {/* Brand column */}
           <div className="col-span-2 space-y-5">
             <div className="flex items-center gap-2">
-              <div className="w-9 h-9 bg-hfc-lime rounded-lg flex items-center justify-center">
-                <span className="font-display font-black text-hfc-black text-sm">HFC</span>
-              </div>
+              <div className="w-9 h-9 bg-hfc-black rounded-lg flex items-center justify-center">
+                          <div className="w-9 h-9 relative flex-shrink-0">
+                            <Image
+                              src="/img/logo.png"
+                              alt="Howfar Transport Company Logo"
+                              fill
+                              className="object-contain group-hover:scale-105 transition-transform"
+                              priority
+                            />
+                          </div>
+                          </div>
               <span className="font-display font-bold text-white text-lg">Howfar</span>
             </div>
             <p className="font-body text-hfc-muted text-sm leading-relaxed max-w-xs">
