@@ -17,16 +17,16 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://howfartransport.com"),
+  metadataBase: new URL("https://howfartransports.onrender.com/"),
 
   title: {
     default:
-      "Howfar Transport Company (HFC) – Affordable Bike Taxi & Ride Services in Makurdi, Benue State, Nigeria, for ₦500 Fixed-Fare Rides",
+      "Howfar Transport Company (HFC) – ₦500 Affordable Bike Taxi & Ride Services in Makurdi, Benue State, Nigeria",
     template: "%s | Howfar Transport Company Makurdi",
   },
 
   description:
-    "Howfar Transport Company (HFC) provides safe, fast, and affordable ₦500 fixed-fare bike rides across Makurdi, Benue State, Nigeria. Reliable transportation from Wurukum, High Level, North Bank, Modern Market, Judges Quarters, Kanshio, Apir, and surrounding areas.",
+    "Howfar Transport Company (HFC) offers safe, fast, and affordable ₦500 fixed-fare bike rides across Makurdi, Benue State, Nigeria. We cover Wurukum, High Level, North Bank, Modern Market, Judges Quarters, Kanshio, Apir, and surrounding areas. Book a reliable ride today!",
 
   keywords: [
     "bike taxi Makurdi",
@@ -39,6 +39,8 @@ export const metadata: Metadata = {
     "Makurdi okada alternative",
     "ride hailing Makurdi",
     "Benue State transportation",
+    "affordable bike rides Makurdi",
+    "safe motorcycle taxi Makurdi",
   ],
 
   authors: [{ name: "Howfar Transport Company" }],
@@ -58,38 +60,47 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title:
-      "₦500 Bike Rides in Makurdi — Howfar Transport Company (HTC)",
+    title: "₦500 Fixed-Fare Bike Rides in Makurdi — Howfar Transport Company",
     description:
-      "Affordable ₦500 fixed-fare bike rides anywhere in Makurdi, Benue State. Fast pickup. Safe drivers. Reliable transport daily.",
-    url: "https://howfartransport.com",
+      "Affordable, reliable, and safe ₦500 bike rides across Makurdi, Benue State. Fast pickup from anywhere in the city. Book your ride now!",
+    url: "https://howfartransports.onrender.com/",
     siteName: "Howfar Transport Company",
     type: "website",
     locale: "en_NG",
     images: [
       {
-        url: "https://howfartransport.com/images/hero-preview.jpg", // 🔥 Replace with your real hosted hero image
+        url: "/img/hero.jpeg", // Local hero image from public/img/
         width: 1200,
         height: 630,
-        alt: "Howfar Transport Company ₦500 bike rides in Makurdi Benue State Nigeria",
+        alt: "Howfar Transport Company bike rides in Makurdi, Benue State, Nigeria",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title:
-      "₦500 Rides Across Makurdi | Howfar Transport Company",
+    title: "₦500 Bike Rides Across Makurdi | Howfar Transport Company",
     description:
-      "Safe, fast, and fixed ₦500 bike transport in Makurdi, Benue State. Request your ride today.",
-    images: ["https://howfartransport.com/images/hero-preview.jpg"], // same image
+      "Safe, fast, and fixed ₦500 bike rides in Makurdi, Benue State. Reliable transport from Wurukum, High Level, North Bank, Modern Market, and more. Book now!",
+    images: ["/img/hero.jpeg"], // Local hero image
   },
 
   alternates: {
-    canonical: "https://howfartransport.com",
+    canonical: "https://howfartransports.onrender.com/",
   },
 
   category: "Transportation",
+
+  // Icons
+  icons: {
+    icon: "/img/icon.png",
+    shortcut: "/img/icon.png",
+  },
+
+  // Google site verification
+  verification: {
+    google: "4FP3mrdBA1hcJ7hYmRwpeCg2p1M5cZIdkX1P_Q3S4QY",
+  },
 };
 
 export default function RootLayout({
@@ -99,6 +110,44 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en-NG" className="scroll-smooth">
+      <head>
+        {/* Google site verification meta tag */}
+        <meta
+          name="google-site-verification"
+          content="4FP3mrdBA1hcJ7hYmRwpeCg2p1M5cZIdkX1P_Q3S4QY"
+        />
+
+        {/* JSON-LD Structured Data for LocalBusiness */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              name: "Howfar Transport Company",
+              url: "https://howfartransports.onrender.com/",
+              logo: "https://howfartransports.onrender.com/img/icon.png",
+              image: "https://howfartransports.onrender.com/img/hero.jpeg",
+              description:
+                "Affordable ₦500 fixed-fare bike rides across Makurdi, Benue State, Nigeria. Safe and fast motorcycle taxi service.",
+              telephone: "+2349155775787",
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: "Makurdi City Center",
+                addressLocality: "Makurdi",
+                addressRegion: "Benue",
+                postalCode: "970001",
+                addressCountry: "NG",
+              },
+              sameAs: [
+                "https://twitter.com/howfartransport",
+                "https://facebook.com/howfartransport",
+              ],
+            }),
+          }}
+        />
+      </head>
+
       <body
         className={`${syne.variable} ${jakarta.variable} font-body bg-hfc-black text-hfc-light antialiased`}
       >
