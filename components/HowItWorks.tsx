@@ -20,7 +20,7 @@ const riderSteps = [
     icon: CheckCircle,
     step: "03",
     title: "Arrive safely — ₦500",
-    desc:  "Your driver arrives, you hop on, and you pay a flat ₦500. Done. Every time.",
+    desc:  "Your rider arrives, you hop on, and you pay a flat ₦500. Done. Every time.",
   },
 ];
 
@@ -29,13 +29,13 @@ const driverSteps = [
     icon: ClipboardList,
     step: "01",
     title: "Apply online",
-    desc:  "Fill in your details on our driver application form. Takes less than 5 minutes.",
+    desc:  "Fill in your details on our riders application form. Takes less than 5 minutes.",
   },
   {
     icon: CheckCircle,
     step: "02",
     title: "Get approved",
-    desc:  "Our team reviews your application. Approved drivers get an official employment letter.",
+    desc:  "Our team reviews your application. Approved riders get an official employment letter.",
   },
   {
     icon: DollarSign,
@@ -98,7 +98,7 @@ export default function HowItWorks() {
           <div className="reveal mb-14 flex flex-col lg:flex-row lg:items-end justify-between gap-4">
             <div>
               <p className="text-hfc-lime font-body text-sm font-semibold mb-2 tracking-widest uppercase">
-                For Riders
+                For Users
               </p>
               <h2 className="font-display font-black text-4xl lg:text-5xl text-white">
                 Ride in 3 simple steps
@@ -124,14 +124,14 @@ export default function HowItWorks() {
           <div className="reveal mb-14 flex flex-col lg:flex-row lg:items-end justify-between gap-4">
             <div>
               <p className="text-hfc-orange font-body text-sm font-semibold mb-2 tracking-widest uppercase">
-                For Drivers
+                For Riders
               </p>
               <h2 className="font-display font-black text-4xl lg:text-5xl text-white">
                 Start earning in 3 steps
               </h2>
             </div>
             <p className="text-hfc-muted max-w-sm font-body">
-              Join our growing team of verified drivers and build a steady income in Makurdi.
+              Join our growing team of verified Riders and build a steady income in Makurdi.
             </p>
           </div>
 

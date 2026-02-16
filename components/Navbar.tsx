@@ -9,7 +9,7 @@ import Image from "next/image";
 
 const navLinks = [
   { label: "How It Works", href: "#how-it-works" },
-  { label: "Why HFC",      href: "#features" },
+  { label: "Why HTC",      href: "#features" },
   { label: "Drive With Us",href: "#drive" },
   { label: "Contact",      href: "#footer" },
 ];
