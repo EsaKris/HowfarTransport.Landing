@@ -3,9 +3,10 @@ import Hero from "@/components/Hero";
 import MarqueeBanner from "@/components/MarqueeBanner";
 import HowItWorks from "@/components/HowItWorks";
 import Stats from "@/components/Stats";
-import Features from "@/components/Features";
 import DriverCTA from "@/components/DriverCTA";
+import Features from "@/components/Features";
 import Testimonials from "@/components/Testimonials";
+import BikeOwner from "@/components/BikeOwner";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -17,9 +18,10 @@ export default function Home() {
         <MarqueeBanner />
         <HowItWorks />
         <Stats />
-        <Features />
         <DriverCTA />
+        <Features />
         <Testimonials />
+        <BikeOwner />
       </main>
       <Footer />
     </>
