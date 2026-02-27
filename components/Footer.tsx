@@ -4,8 +4,8 @@ import Image from "next/image";
 
 const links = {
   Riders: [
-    { label: "Sign Up",        href: "https://riders.howfar.ng/register" },
-    { label: "Log In",         href: "https://riders.howfar.ng/login" },
+    { label: "Sign Up",        href: "https://riders-howfartransports.onrender.com/register" },
+    { label: "Log In",         href: "https://riders-howfartransports.onrender.com/login" },
     { label: "How It Works",   href: "#how-it-works" },
     { label: "Pricing",        href: "#features" },
   ],
@@ -16,7 +16,7 @@ const links = {
     { label: "Requirements",   href: "/apply#requirements" },
   ],
   Company: [
-    { label: "About HFC",      href: "/about" },
+    { label: "About HowFar Transport",      href: "/about" },
     { label: "Careers",        href: "/careers" },
     { label: "Privacy Policy", href: "/privacy" },
     { label: "Terms of Use",   href: "/terms" },
@@ -39,7 +39,7 @@ export default function Footer() {
           </div>
           <div className="flex gap-3 flex-shrink-0">
             <Link
-              href="https://riders.howfar.ng/register"
+              href="https://riders-howfartransports.onrender.com/login"
               className="bg-hfc-black text-hfc-lime font-display font-bold text-sm px-5 py-3 rounded-xl hover:bg-hfc-dark transition-colors flex items-center gap-2"
             >
               Get a Ride <ArrowRight size={14} />
@@ -48,7 +48,7 @@ export default function Footer() {
               href="/apply"
               className="bg-white/20 backdrop-blur text-hfc-black font-display font-bold text-sm px-5 py-3 rounded-xl hover:bg-white/30 transition-colors"
             >
-              Drive With Us
+              Ride for Us
             </Link>
           </div>
         </div>
@@ -71,7 +71,7 @@ export default function Footer() {
                             />
                           </div>
                           </div>
-              <span className="font-display font-bold text-white text-lg">Howfar</span>
+              <span className="font-display font-bold text-white text-lg">Howfar Transports</span>
             </div>
             <p className="font-body text-hfc-muted text-sm leading-relaxed max-w-xs">
               Makurdi's most trusted bike transport platform. Safe rides, fixed fares,

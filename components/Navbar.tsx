@@ -71,13 +71,13 @@ export default function Navbar() {
         {/* Desktop CTA */}
         <div className="hidden md:flex items-center gap-3">
           <Link
-            href="https://riders.howfar.ng/login"
+            href="https://riders-howfartransports.onrender.com/login"
             className="text-hfc-muted hover:text-white text-sm font-medium transition-colors px-4 py-2"
           >
             Sign In
           </Link>
           <Link
-            href="https://riders.howfar.ng/register"
+            href="https://riders-howfartransports.onrender.com/register"
             className="btn-primary bg-hfc-lime text-hfc-black font-display font-bold text-sm px-5 py-2.5 rounded-xl hover:bg-white transition-colors"
           >
             Get a Ride

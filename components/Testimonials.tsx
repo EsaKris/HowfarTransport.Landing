@@ -7,7 +7,7 @@ const testimonials = [
   {
     name:   "Amaka O.",
     role:   "Student, BSU",
-    quote:  "I use Howfar Transports every morning to get to campus. ₦500 is fair, the driver always shows up fast, and I feel safe. Best transport option in Makurdi by far.",
+    quote:  "I use Howfar Transports every morning to get to campus. ₦500 is fair, the rider always shows up fast, and I feel safe. Best transport option in Makurdi by far.",
     rating: 5,
     accent: "lime",
     image:  "https://images.unsplash.com/photo-1522529599102-193c0d76b5b6?w=150&h=150&fit=crop&auto=format&q=80",
@@ -23,14 +23,14 @@ const testimonials = [
   {
     name:   "Grace I.",
     role:   "Trader, Wurukum Market",
-    quote:  "As a market woman, I appreciate knowing exactly what I'll pay. ₦500 is consistent. The drivers are always polite and on time. I recommend Howfar Transports to everyone.",
+    quote:  "As a market woman, I appreciate knowing exactly what I'll pay. ₦500 is consistent. The riders are always polite and on time. I recommend Howfar Transports to everyone.",
     rating: 5,
     accent: "lime",
     image:  "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop&auto=format&q=80",
   },
   {
     name:   "Emmanuel D.",
-    role:   "Howfar Transport Company Driver",
+    role:   "Howfar Transport Company Rider",
     quote:  "I've been driving with Howfar Transports for 6 months. Good pay, flexible hours, and the team treats us well. I make up to ₦8,000 on busy days. Best decision I made.",
     rating: 5,
     accent: "orange",
